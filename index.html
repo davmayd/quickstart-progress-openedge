@@ -772,7 +772,6 @@ table p {
 <ul class="sectlevel1">
 <li><a href="#_overview">Overview</a></li>
 <li><a href="#_openedge_on_aws"><em>OpenEdge</em> on AWS</a></li>
-<li><a href="#_openedge_on_aws_2">OpenEdge on AWS</a></li>
 <li><a href="#_cost">Cost</a></li>
 <li><a href="#_software_licenses">Software Licenses</a></li>
 <li><a href="#_architecture">Architecture</a></li>
@@ -832,7 +831,7 @@ report bugs, or submit feature ideas for this Quick Start.
 instructions for deploying OpenEdge on the AWS Cloud.</p>
 </div>
 <div class="paragraph">
-<p>This Quick Start is for users who want to deploy a highly-available Progress OpenEdge stack.</p>
+<p>This Quick Start is for users who want to deploy a highly-available three-tier Progress OpenEdge stack.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -852,12 +851,6 @@ collaborated with AWS on the content of the Quick Start.
 </div>
 <div class="sect1">
 <h2 id="_openedge_on_aws"><em>OpenEdge</em> on AWS</h2>
-<div class="sectionbody">
-
-</div>
-</div>
-<div class="sect1">
-<h2 id="_openedge_on_aws_2">OpenEdge on AWS</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>The OpenEdge on AWS Cloud is a convenient way to create the infrastructure required to run an n-tier OpenEdge ABL application with a Web UI, REST data services and the OpenEdge database. It combines the AWS services and the OpenEdge functionality to achieve high availability, redundancy and scalability.</p>
@@ -922,7 +915,7 @@ After you deploy the Quick Start, we recommend that you enable the <a href="http
 <p>Deploying this Quick Start for a new virtual private cloud (VPC) with <strong>default parameters</strong> builds the following OpenEdge environment in the AWS Cloud.</p>
 </div>
 <div class="paragraph">
-<p><span class="image"><img src="images/media/image1.png" alt="image" width="647" height="475"></span></p>
+<p><span class="image"><img src="images/images/image1.png" alt="image" width="647" height="475"></span></p>
 </div>
 <div class="paragraph">
 <p>Figure 1: Quick Start architecture for OpenEdge on AWS</p>
@@ -1062,7 +1055,55 @@ Cloud.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>_us-east-1 (N. Virginia)</p>
+<p>us-east-1 (N. Virginia)</p>
+</li>
+<li>
+<p>us-east-2 (Ohio)</p>
+</li>
+<li>
+<p>us-west-1 (N. California)</p>
+</li>
+<li>
+<p>us-west-2 (Oregon)</p>
+</li>
+<li>
+<p>ca-central-1 (Canada Central)</p>
+</li>
+<li>
+<p>eu-central-1 (Frankfurt)</p>
+</li>
+<li>
+<p>eu-west-1 (Ireland)</p>
+</li>
+<li>
+<p>eu-west-2 (London)</p>
+</li>
+<li>
+<p>eu-west-3 (Paris)</p>
+</li>
+<li>
+<p>ap-southeast-1 (Singapore)</p>
+</li>
+<li>
+<p>ap-southeast-2 (Sydney)</p>
+</li>
+<li>
+<p>ap-south-1 (Mumbai)</p>
+</li>
+<li>
+<p>ap-northeast-1 (Tokyo)</p>
+</li>
+<li>
+<p>ap-northeast-2 (Seoul)</p>
+</li>
+<li>
+<p>sa-east-1 (South America)</p>
+</li>
+<li>
+<p>eu-north-1 (Stockholm)</p>
+</li>
+<li>
+<p>ap-east-1 (Hong Kong)</p>
 </li>
 </ul>
 </div>
@@ -1161,9 +1202,6 @@ You are responsible for the cost of the AWS services used while running this Qui
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://qs_launch_link" target="_blank" rel="noopener">Deploy OpenEdge into a new VPC on AWS</a></p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://qs_launch_link" target="_blank" rel="noopener">Deploy OpenEdge into an existing VPC on AWS</a></p></td>
-</tr>
 </tbody>
 </table>
 <div class="admonitionblock warning">
@@ -1182,7 +1220,7 @@ If you’re deploying OpenEdge into an existing VPC, make sure that your VPC has
 <p>Also, make sure that the domain name option in the DHCP options is configured as explained in the <a href="http://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_DHCP_Options.html" target="_blank" rel="noopener">Amazon VPC documentation</a>. You provide your VPC settings when you launch the Quick Start.</p>
 </div>
 <div class="paragraph">
-<p>Each deployment takes about 30 minutes to complete.</p>
+<p>Each deployment takes about 20 minutes to complete.</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic" start="2">
@@ -1522,8 +1560,7 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 <div class="ulist">
 <ul>
 <li>
-<p><em><em></em><em></em></em><em><em></em><em></em></em><em>_</em>
-<a href="https://docs.progress.com" class="bare">https://docs.progress.com</a></p>
+<p><a href="https://docs.progress.com" class="bare">https://docs.progress.com</a></p>
 </li>
 </ul>
 </div>
@@ -1595,7 +1632,7 @@ and to share your customizations with others.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-07-11 19:51:42 UTC
+Last updated 2020-07-11 20:24:40 UTC
 </div>
 </div>
 </body>
