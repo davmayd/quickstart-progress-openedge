@@ -771,9 +771,9 @@ table p {
 <div id="toctitle"></div>
 <ul class="sectlevel1">
 <li><a href="#_overview">Overview</a></li>
-<li><a href="#_openedge_on_aws"><em>OpenEdge</em> on AWS</a></li>
+<li><a href="#_openedge_on_aws">OpenEdge on AWS</a></li>
 <li><a href="#_cost">Cost</a></li>
-<li><a href="#_software_licenses">Software Licenses</a></li>
+<li><a href="#_software_licenses">Software licenses</a></li>
 <li><a href="#_architecture">Architecture</a></li>
 <li><a href="#_planning_the_deployment">Planning the deployment</a>
 <ul class="sectlevel2">
@@ -782,7 +782,7 @@ table p {
 <li><a href="#_technical_requirements">Technical requirements</a></li>
 </ul>
 </li>
-<li><a href="#_deployment_steps">Deployment Steps</a>
+<li><a href="#_deployment_steps">Deployment steps</a>
 <ul class="sectlevel2">
 <li><a href="#_sign_in_to_your_aws_account">Sign in to your AWS account</a></li>
 <li><a href="#_subscribe_to_the_openedge_ami">Subscribe to the OpenEdge AMI</a></li>
@@ -832,7 +832,7 @@ report bugs, or submit feature ideas for this Quick Start.
 instructions for deploying OpenEdge on the AWS Cloud.</p>
 </div>
 <div class="paragraph">
-<p>This Quick Start is for users who want to deploy a highly-available three-tier Progress OpenEdge stack.</p>
+<p>The Quick Start is for users who want to deploy a highly-available three-tier Progress OpenEdge stack on the AWS Cloud.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -851,22 +851,19 @@ collaborated with AWS on the content of the Quick Start.
 </div>
 </div>
 <div class="sect1">
-<h2 id="_openedge_on_aws"><em>OpenEdge</em> on AWS</h2>
+<h2 id="_openedge_on_aws">OpenEdge on AWS</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>The OpenEdge on AWS Cloud is a convenient way to create the infrastructure required to run an n-tier OpenEdge ABL application with a Web UI, REST data services and the OpenEdge database. It combines the AWS services and the OpenEdge functionality to achieve high availability, redundancy and scalability.</p>
+<p>Progress OpenEdge on AWS is a convenient way to create the infrastructure required to run an n-tier OpenEdge Advanced Business Language (ABL) application with a web user interface (UI), representational state transfer (REST) data services, and the OpenEdge database. It combines AWS services and OpenEdge functionality to achieve high availability, redundancy, and scalability.</p>
 </div>
 <div class="paragraph">
 <p>You can use the Quick Start CloudFormation template interactively to create a new infrastructure or use the CloudFormation CLI to automate deployments of OpenEdge applications from a CI/CD pipeline.</p>
 </div>
 <div class="paragraph">
-<p>The template uses user-provided deployment packages for the Web server, PAS for OpenEdge and the OpenEdge database so that the components are ready to run after the creation of the infrastructure. You can package your on-premises application using this approach to easily deploy it to the AWS cloud.</p>
+<p>The template uses user-provided deployment packages for the web server, Progress Application Server (PAS) for the OpenEdge application, and OpenEdge Relational Database Management System (RDBMS) for the OpenEdge database. You can package your on-premises application using this approach to deploy it to the AWS Cloud.</p>
 </div>
 <div class="paragraph">
-<p>The Web server and PAS for OpenEdge dynamically download and install the latest version of the package when the EC2 instances are created. This can be used rollout new versions of the application if desired.</p>
-</div>
-<div class="paragraph">
-<p>The configuration for the database can use OpenEdge Replication Sets or any other approach to provide redundancy.</p>
+<p>The web server and PAS for OpenEdge dynamically download and install the latest version of the package when Amazon Elastic Compute Cloud (Amazon EC2) instances are created. This can be used to roll out new versions of the application if desired. The configuration for the database can use OpenEdge replication sets to provide redundancy.</p>
 </div>
 </div>
 </div>
@@ -875,7 +872,7 @@ collaborated with AWS on the content of the Quick Start.
 <div class="sectionbody">
 <div class="paragraph">
 <p>You are responsible for the cost of the AWS services used while running
-this Quick Start reference deployment. There is no additional cost for
+this Quick Start. There is no additional cost for
 using the Quick Start.</p>
 </div>
 <div class="paragraph">
@@ -891,7 +888,7 @@ see the pricing pages for each AWS service you will use. Prices are subject to c
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-After you deploy the Quick Start, we recommend that you enable the <a href="https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-reports-gettingstarted-turnonreports.html" target="_blank" rel="noopener">AWS Cost and Usage Report</a>. This report delivers billing metrics to an Amazon Simple Storage Service (Amazon S3) bucket in your account. It provides cost estimates based on usage throughout each month and finalizes the data at the end of the month. For more information about the report, see the <a href="https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-reports-costusage.html" target="_blank" rel="noopener">AWS documentation</a>.
+After you deploy the Quick Start, enable the <a href="https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-reports-gettingstarted-turnonreports.html" target="_blank" rel="noopener">AWS Cost and Usage Report</a> to deliver billing metrics to an Amazon Simple Storage Service (Amazon S3) bucket in your account. It provides cost estimates based on usage throughout each month and finalizes the data at the end of the month. For more information about the report, see the <a href="https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-reports-costusage.html" target="_blank" rel="noopener">AWS documentation</a>.
 </td>
 </tr>
 </table>
@@ -899,7 +896,7 @@ After you deploy the Quick Start, we recommend that you enable the <a href="http
 </div>
 </div>
 <div class="sect1">
-<h2 id="_software_licenses">Software Licenses</h2>
+<h2 id="_software_licenses">Software licenses</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>This Quick Start requires a license for OpenEdge. To use the Quick Start in your production environment, sign up for a license at the <a href="https://www.progress.com/campaigns/openedge/free-trial-2/?&amp;utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=openedge-brand-search-en-NA&amp;ad_group=OpenEdge&amp;utm_term=openedge&amp;ad_copy=&amp;ad_type=&amp;ad_size=&amp;ad_placement=&amp;gclid=Cj0KCQjwz4z3BRCgARIsAES_OVeGrpyEnFrnt3HDhwQLmzTKAu_LbVR6k6vCfk8xTlfrDCUcLyRJbQMaAswOEALw_wcB&amp;gclsrc=aw.ds">Progress website</a>. After the OpenEdge infrastructure has launched, enter the license key to activate the software.</p>
@@ -1001,9 +998,9 @@ Cloud.</p>
 <p>Before you launch the Quick Start, your account must be configured as specified below. Otherwise, deployment might fail.</p>
 </div>
 <div class="sect3">
-<h4 id="_resource_limits">Resource Limits</h4>
+<h4 id="_resource_limits">Resource limits</h4>
 <div class="paragraph">
-<p>If necessary, request <a href="https://console.aws.amazon.com/servicequotas/home?region=us-east-2#!/" target="_blank" rel="noopener">service quota increases</a> for the following resources. You might need to do this if an existing deployment uses these resources, and you might exceed the default quotas with this deployment. The <a href="https://console.aws.amazon.com/servicequotas/home?region=us-east-2#!/" target="_blank" rel="noopener">Service Quotas console</a> displays your usage and quotas for some aspects of some services. For more information, see the <a href="https://docs.aws.amazon.com/servicequotas/latest/userguide/intro.html" target="_blank" rel="noopener">AWS documentation</a>.</p>
+<p>If necessary, request <a href="https://console.aws.amazon.com/servicequotas/home?region=us-east-2#!/" target="_blank" rel="noopener">service quota increases</a> for the following resources. You might need to request increases if your existing deployment currently uses these resources, and this Quick Start deployment could result in exceeding the default quotas. The <a href="https://console.aws.amazon.com/servicequotas/home?region=us-east-2#!/" target="_blank" rel="noopener">Service Quotas console</a> displays your usage and quotas for some aspects of some services. For more information, see the <a href="https://docs.aws.amazon.com/servicequotas/latest/userguide/intro.html" target="_blank" rel="noopener">AWS documentation</a>.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
@@ -1049,9 +1046,9 @@ Cloud.</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="_supported_regions">Supported Regions</h4>
+<h4 id="_supported_regions">Supported regions</h4>
 <div class="paragraph">
-<p>The following regions are currently supported by this Quick Start Reference Architecture.</p>
+<p>The following regions are currently supported by this Quick Start.</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1115,14 +1112,14 @@ Cloud.</p>
 <i class="fa icon-tip" title="Tip"></i>
 </td>
 <td class="content">
-Certain regions are available on an opt-in basis. Please refer to the AWS Documentaiton on <a href="https://docs.aws.amazon.com/general/latest/gr/rande-manage.html" target="_blank" rel="noopener">Managing Regions</a> for more information.
+Certain regions are available on an opt-in basis. Refer to the AWS Documentation on <a href="https://docs.aws.amazon.com/general/latest/gr/rande-manage.html" target="_blank" rel="noopener">Managing Regions</a> for more information.
 </td>
 </tr>
 </table>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_ec2_key_pairs">EC2 Key Pairs</h4>
+<h4 id="_ec2_key_pairs">EC2 key pairs</h4>
 <div class="paragraph">
 <p>Make sure that at least one <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html" target="_blank" rel="noopener">Amazon EC2 key pair</a> exists in your AWS account in the Region where you plan to deploy the Quick Start. Make note of the key pair name. You need it during deployment. To create a key pair, follow the <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html" target="_blank" rel="noopener">instructions in the AWS documentation</a>.</p>
 </div>
@@ -1131,7 +1128,7 @@ Certain regions are available on an opt-in basis. Please refer to the AWS Docume
 </div>
 </div>
 <div class="sect3">
-<h4 id="_iam_permissions">IAM Permissions</h4>
+<h4 id="_iam_permissions">IAM permissions</h4>
 <div class="paragraph">
 <p>Before launching the Quick Start, you must log in to the AWS Management Console with <a href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html" target="_blank" rel="noopener">IAM permissions</a> for the resources and actions the templates deploy.</p>
 </div>
@@ -1159,7 +1156,7 @@ Certain regions are available on an opt-in basis. Please refer to the AWS Docume
 </div>
 </div>
 <div class="sect1">
-<h2 id="_deployment_steps">Deployment Steps</h2>
+<h2 id="_deployment_steps">Deployment steps</h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="_sign_in_to_your_aws_account">Sign in to your AWS account</h3>
@@ -1182,13 +1179,10 @@ Certain regions are available on an opt-in basis. Please refer to the AWS Docume
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Sign in to your AWS account.</p>
-</li>
-<li>
 <p>{https://aws.amazon.com/marketplace/pp/B08CRKD9MY?qid=1594739011658&amp;sr=0-3&amp;ref_=srh_res_product_title}[Open the page for the Progress Application Server AMI in AWS Marketplace], and then choose <strong>Continue to Subscribe</strong>.</p>
 </li>
 <li>
-<p>{https://aws.amazon.com/marketplace/pp/B08CS3KFH5?qid=1594739011658&amp;sr=0-1&amp;ref_=srh_res_product_title}[Open the page for teh Progress OpenEdge RDBMS AMI in AWS Marketplace], and then choose <strong>Continue to Subscribe</strong>.</p>
+<p>{https://aws.amazon.com/marketplace/pp/B08CS3KFH5?qid=1594739011658&amp;sr=0-1&amp;ref_=srh_res_product_title}[Open the page for the Progress OpenEdge RDBMS AMI in AWS Marketplace], and then choose <strong>Continue to Subscribe</strong>.</p>
 </li>
 <li>
 <p>Review the terms and conditions for software usage, and then choose <strong>Accept Terms</strong>.<br>
@@ -1217,7 +1211,7 @@ You are responsible for the cost of the AWS services used while running this Qui
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Sign in to your AWS account, and choose one of the following options to launch the AWS CloudFormation template. For help with choosing an option, see <a href="#_deployment_options">deployment options</a> earlier in this guide.</p>
+<p>Click the following link to launch the AWS CloudFormation template. For help with choosing an option, see <a href="#_deployment_options">deployment options</a> earlier in this guide.</p>
 </li>
 </ol>
 </div>
@@ -1623,16 +1617,11 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 <div class="paragraph">
 <p>== Quick Start reference deployments</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>AWS Quick Start home page<br>
-<a href="https://aws.amazon.com/quickstart/" class="bare">https://aws.amazon.com/quickstart/</a></p>
-</li>
-</ul>
+<div class="paragraph">
+<p>See the <a href="https://aws.amazon.com/quickstart/">AWS Quick Start home page</a>.</p>
 </div>
 <div class="paragraph">
-<p>== GitHub Repository</p>
+<p>== GitHub repository</p>
 </div>
 <div class="paragraph">
 <p>You can visit our <a href="https://github.com/aws-quickstart/quickstart-progress-openedge" target="_blank" rel="noopener">GitHub repository</a> to download
@@ -1659,7 +1648,7 @@ and to share your customizations with others.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-07-14 15:07:31 UTC
+Last updated 2020-07-15 16:48:28 UTC
 </div>
 </div>
 </body>
