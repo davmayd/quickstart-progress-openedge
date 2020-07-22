@@ -41,7 +41,7 @@
 (`KeyPairName`)|`**__Requires Input__**`|NO_DESCRIPTION|Bastion AMI OS
 (`BastionAMIOS`)|`Amazon-Linux-HVM`|The Linux distribution for the AMI to be used for the bastion instances|Bastion instance type
 (`BastionInstanceType`)|`t2.micro`|Amazon EC2 instance type for the bastion instances|Instance type
-(`InstanceType`)|`t2.medium`|EC2 instance type|Minimum Instances in ASG
+(`InstanceType`)|`t3a.medium`|EC2 instance type|Minimum Instances in ASG
 (`MinScalingInstances`)|`2`|Minimum number of EC2 instances in ASG|Maximum Instances in ASG
 (`MaxScalingInstances`)|`8`|Maximum number of EC2 instances in ASG
 |===
