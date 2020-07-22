@@ -784,15 +784,16 @@ table p {
 </li>
 <li><a href="#_deployment_steps">Deployment steps</a>
 <ul class="sectlevel2">
-<li><a href="#_sign_in_to_your_aws_account">Sign in to your AWS account</a></li>
-<li><a href="#_subscribe_to_the_openedge_ami">Subscribe to the OpenEdge AMI</a></li>
-<li><a href="#_launch_the_quick_start">Launch the Quick Start</a></li>
 <li><a href="#_launch_into_a_new_vpc">Launch into a new VPC</a></li>
 </ul>
 </li>
-<li><a href="#_best_practices_for_using_openedge_on_aws">Best practices for using OpenEdge on AWS</a></li>
-<li><a href="#_security">Security</a></li>
-<li><a href="#_other_useful_information">Other useful information</a></li>
+<li><a href="#_send_us_feedback">Send us feedback</a></li>
+<li><a href="#_quick_start_reference_deployments">Quick Start reference deployments</a></li>
+<li><a href="#_github_repository">GitHub repository</a>
+<ul class="sectlevel3">
+<li><a href="#_notices">Notices</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -806,12 +807,20 @@ table p {
 <img src="https://aws-quickstart.s3.amazonaws.com/quickstart-progress-openedge/docs/boilerplate/.images/aws-quickstart-graphic.png" alt="QS" width="80" height="80">
 </div>
 </div>
+<h3 id="_draft_document_unofficial_guidance" class="discrete text-center">DRAFT DOCUMENT / UNOFFICIAL GUIDANCE</h3>
+<div class="exampleblock">
+<div class="content">
 <div class="paragraph text-center">
 <p><strong>July, 2020</strong><br>
 <em>Edsel Garcia, Progress Software</em><br>
 <em>Dave May - Parter Solution Architect, Quick Start team</em></p>
 </div>
-<div class="admonitionblock tip text-left">
+</div>
+</div>
+<div class="paragraph">
+<p><em><strong>The above information is configured within <code>partner_editable/_settings.adoc</code></strong></em></p>
+</div>
+<div class="admonitionblock tip">
 <table>
 <tr>
 <td class="icon">
@@ -833,7 +842,14 @@ report bugs, or submit feature ideas for this Quick Start.
 <h2 id="_overview">Overview</h2>
 <div class="sectionbody">
 <div class="paragraph">
+<p><em><strong>This portion of the deployment guide is located at <code>docs/partner_editable/overview_target_and_usage</code></strong></em></p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
 <p>The Quick Start is for users who want to deploy a highly-available three-tier Progress OpenEdge stack on the AWS Cloud.</p>
+</div>
+</div>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -855,6 +871,11 @@ collaborated with AWS on the content of the Quick Start.
 <h2 id="_openedge_on_aws">OpenEdge on AWS</h2>
 <div class="sectionbody">
 <div class="paragraph">
+<p><em><strong>This portion of the deployment guide is located at <code>docs/partner_editable/product_description.adoc</code></strong></em></p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
 <p>Progress OpenEdge on AWS is a convenient way to create the infrastructure required to run an n-tier OpenEdge Advanced Business Language (ABL) application with a web user interface (UI), representational state transfer (REST) data services, and the OpenEdge database. It combines AWS services and OpenEdge functionality to achieve high availability, redundancy, and scalability.</p>
 </div>
 <div class="paragraph">
@@ -865,6 +886,8 @@ collaborated with AWS on the content of the Quick Start.
 </div>
 <div class="paragraph">
 <p>The web server and PAS for OpenEdge dynamically download and install the latest version of the package when Amazon Elastic Compute Cloud (Amazon EC2) instances are created. This can be used to roll out new versions of the application if desired. The configuration for the database can use OpenEdge replication sets to provide redundancy.</p>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -900,6 +923,11 @@ After you deploy the Quick Start, enable the <a href="https://docs.aws.amazon.co
 <h2 id="_software_licenses">Software licenses</h2>
 <div class="sectionbody">
 <div class="paragraph">
+<p><em><strong>This portion of the deployment guide is located at <code>docs/partner_editable/licenses.adoc</code></strong></em></p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
 <p>This Quick Start requires a license for OpenEdge. To use the Quick Start in your production environment, sign up for a license at the <a href="https://www.progress.com/campaigns/openedge/free-trial-2/?&amp;utm_source=google&amp;utm_medium=cpc&amp;utm_campaign=openedge-brand-search-en-NA&amp;ad_group=OpenEdge&amp;utm_term=openedge&amp;ad_copy=&amp;ad_type=&amp;ad_size=&amp;ad_placement=&amp;gclid=Cj0KCQjwz4z3BRCgARIsAES_OVeGrpyEnFrnt3HDhwQLmzTKAu_LbVR6k6vCfk8xTlfrDCUcLyRJbQMaAswOEALw_wcB&amp;gclsrc=aw.ds">Progress website</a>. After the OpenEdge infrastructure has launched, enter the license key to activate the software.</p>
 </div>
 <div class="paragraph">
@@ -907,9 +935,16 @@ After you deploy the Quick Start, enable the <a href="https://docs.aws.amazon.co
 </div>
 </div>
 </div>
+</div>
+</div>
 <div class="sect1">
 <h2 id="_architecture">Architecture</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p><em><strong>This portion of the deployment guide is located at <code>docs/partner_editable/architecture.adoc</code></strong></em></p>
+</div>
+<div class="exampleblock">
+<div class="content">
 <div class="paragraph">
 <p>Deploying this Quick Start for a new virtual private cloud (VPC) with <strong>default parameters</strong> builds the following OpenEdge environment in the AWS Cloud.</p>
 </div>
@@ -963,6 +998,8 @@ After you deploy the Quick Start, enable the <a href="https://docs.aws.amazon.co
 </div>
 </div>
 </div>
+</div>
+</div>
 <div class="sect1">
 <h2 id="_planning_the_deployment">Planning the deployment</h2>
 <div class="sectionbody">
@@ -978,10 +1015,17 @@ deploy, and operate your infrastructure and applications on the AWS
 Cloud.</p>
 </div>
 <div class="paragraph">
+<p><em><strong>This portion of the deployment guide is located at <code>docs/partner_editable/specialized_knowledge.adoc</code></strong></em></p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
 <p><a id="_Automated_Deployment"></a><a id="_Deployment_Options"></a><a id="_Toc462612194"></a><a id="_Toc470792037"></a>This Quick Start assumes familiarity with OpenEdge technologies; specifically, PAS for OpenEdge and the OpenEdge RDBMS.</p>
 </div>
 <div class="paragraph">
 <p>This deployment guide also requires a moderate level of familiarity with AWS services. If you’re new to AWS, visit the <a href="https://aws.amazon.com/getting-started/">Getting Started Resource Center</a> and the <a href="https://aws.amazon.com/training/">AWS Training and Certification website</a>. These sites provide materials for learning how to design, deploy, and operate your infrastructure and applications on the AWS Cloud.</p>
+</div>
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -1003,6 +1047,11 @@ Cloud.</p>
 <div class="paragraph">
 <p>If necessary, request <a href="https://console.aws.amazon.com/servicequotas/home?region=us-east-2#!/" target="_blank" rel="noopener">service quota increases</a> for the following resources. You might need to request increases if your existing deployment currently uses these resources, and this Quick Start deployment could result in exceeding the default quotas. The <a href="https://console.aws.amazon.com/servicequotas/home?region=us-east-2#!/" target="_blank" rel="noopener">Service Quotas console</a> displays your usage and quotas for some aspects of some services. For more information, see the <a href="https://docs.aws.amazon.com/servicequotas/latest/userguide/intro.html" target="_blank" rel="noopener">AWS documentation</a>.</p>
 </div>
+<div class="paragraph">
+<p><em><strong>This portion of the deployment guide is located at <code>docs/partner_editable/service_limits.adoc</code></strong></em></p>
+</div>
+<div class="exampleblock">
+<div class="content">
 <table class="tableblock frame-all grid-all stretch">
 <colgroup>
 <col style="width: 50%;">
@@ -1046,11 +1095,18 @@ Cloud.</p>
 </tbody>
 </table>
 </div>
+</div>
+</div>
 <div class="sect3">
 <h4 id="_supported_regions">Supported regions</h4>
 <div class="paragraph">
 <p>The following regions are currently supported by this Quick Start.</p>
 </div>
+<div class="paragraph">
+<p><em><strong>This portion of the deployment guide is located at <code>docs/partner_editable/regions.adoc</code></strong></em></p>
+</div>
+<div class="exampleblock">
+<div class="content">
 <div class="ulist">
 <ul>
 <li>
@@ -1106,6 +1162,8 @@ Cloud.</p>
 </li>
 </ul>
 </div>
+</div>
+</div>
 <div class="admonitionblock tip">
 <table>
 <tr>
@@ -1121,6 +1179,13 @@ Certain regions are available on an opt-in basis. Refer to the AWS Documentation
 </div>
 <div class="sect3">
 <h4 id="_ec2_key_pairs">EC2 key pairs</h4>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p><em>This section is conditional on EC2 instances being used in the Cloudformation Templates</em></p>
+</div>
+</div>
+</div>
 <div class="paragraph">
 <p>Make sure that at least one <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html" target="_blank" rel="noopener">Amazon EC2 key pair</a> exists in your AWS account in the Region where you plan to deploy the Quick Start. Make note of the key pair name. You need it during deployment. To create a key pair, follow the <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html" target="_blank" rel="noopener">instructions in the AWS documentation</a>.</p>
 </div>
@@ -1136,9 +1201,22 @@ Certain regions are available on an opt-in basis. Refer to the AWS Documentation
 <div class="paragraph">
 <p>The <em>AdministratorAccess</em> managed policy within IAM provides sufficient permissions, although your organization may choose to use a custom policy with more restrictions.</p>
 </div>
+<div class="paragraph">
+<p><em><strong>This portion of the deployment guide is located at <code>docs/partner_editable/pre-reqs.adoc</code></strong></em></p>
+</div>
+<div class="exampleblock">
+<div class="content">
+
+</div>
+</div>
 </div>
 <div class="sect3">
 <h4 id="_deployment_options">Deployment options</h4>
+<div class="paragraph">
+<p><em><strong>This portion of the deployment guide is located at <code>docs/partner_editable/deployment_options.adoc</code></strong></em></p>
+</div>
+<div class="exampleblock">
+<div class="content">
 <div class="paragraph">
 <p>This Quick Start provides one deployment option:</p>
 </div>
@@ -1156,11 +1234,19 @@ Certain regions are available on an opt-in basis. Refer to the AWS Documentation
 </div>
 </div>
 </div>
+</div>
+</div>
 <div class="sect1">
 <h2 id="_deployment_steps">Deployment steps</h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="_sign_in_to_your_aws_account">Sign in to your AWS account</h3>
+<div class="paragraph">
+<p><em><strong>This portion of the deployment guide is located at <code>docs/partner_editable/deploy_steps</em>.adoc</code></strong>_</p>
+</div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>=== Sign in to your AWS account</p>
+</div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
@@ -1171,9 +1257,9 @@ Certain regions are available on an opt-in basis. Refer to the AWS Documentation
 </li>
 </ol>
 </div>
+<div class="paragraph">
+<p>=== Subscribe to the OpenEdge AMI</p>
 </div>
-<div class="sect2">
-<h3 id="_subscribe_to_the_openedge_ami">Subscribe to the OpenEdge AMI</h3>
 <div class="paragraph">
 <p>This Quick Start requires a subscription to the AMI for OpenEdge in AWS Marketplace.</p>
 </div>
@@ -1194,9 +1280,9 @@ A confirmation page loads, and an email confirmation is sent to the account owne
 </li>
 </ol>
 </div>
+<div class="paragraph">
+<p>=== Launch the Quick Start</p>
 </div>
-<div class="sect2">
-<h3 id="_launch_the_quick_start">Launch the Quick Start</h3>
 <div class="admonitionblock note">
 <table>
 <tr>
@@ -1261,6 +1347,8 @@ If you’re deploying OpenEdge into an existing VPC, make sure that your VPC has
 </li>
 </ol>
 </div>
+</div>
+</div>
 <div class="paragraph">
 <p>In the following tables, parameters are listed by category and described separately for the deployment options. When you finish reviewing and customizing the parameters, choose <strong>Next</strong>.</p>
 </div>
@@ -1276,7 +1364,6 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 </td>
 </tr>
 </table>
-</div>
 </div>
 <div class="sect2">
 <h3 id="_launch_into_a_new_vpc">Launch into a new VPC</h3>
@@ -1551,31 +1638,29 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 </div>
 <div class="title">Figure 1. OpenEdge outputs after successful deployment</div>
 </div>
+<div class="paragraph">
+<p><em><strong>This portion of the deployment guide is located at <code>docs/partner_editable/additional_info.adoc</code></strong></em></p>
 </div>
+<div class="exampleblock">
+<div class="content">
+<div class="paragraph">
+<p>== Best practices for using OpenEdge on AWS</p>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_best_practices_for_using_openedge_on_aws">Best practices for using OpenEdge on AWS</h2>
-<div class="sectionbody">
 <div class="paragraph">
 <p>For information on best practices on using OpenEdge on AWS visit the Progress Information Hub at <a href="https://docs.progress.com" class="bare">https://docs.progress.com</a>.</p>
 </div>
+<div class="paragraph">
+<p>== Security</p>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_security">Security</h2>
-<div class="sectionbody">
 <div class="paragraph">
 <p>The OpenEdge application is accessed via a web browser using HTTP by default. Please visit the Progress Information Hub for info on how to implement access via HTTPS.</p>
 </div>
 <div class="paragraph">
 <p>You can use the RemoteAccessCIDR and WebserverCIDR parameters to restrict the IP addresses that you use to access the application.</p>
 </div>
+<div class="paragraph">
+<p>== Other useful information</p>
 </div>
-</div>
-<div class="sect1">
-<h2 id="_other_useful_information">Other useful information</h2>
-<div class="sectionbody">
 <div class="paragraph">
 <p>Additional information on using OpenEdge on the AWS Cloud can be found at the Progress Information Hub:</p>
 </div>
@@ -1588,6 +1673,16 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 </div>
 <div class="quoteblock">
 <blockquote>
+
+</blockquote>
+</div>
+</div>
+</div>
+<div class="paragraph">
+<p><em><strong>This portion of the deployment guide is located at <code>docs/partner_editable/faq_troubleshooting.adoc</code></strong></em></p>
+</div>
+<div class="exampleblock">
+<div class="content">
 <div class="paragraph">
 <p>== FAQ</p>
 </div>
@@ -1609,21 +1704,30 @@ Region', and 'Quick Start S3 key prefix', unless you are customizing the Quick S
 <div class="paragraph">
 <p><strong>A.</strong> We recommend that you launch the Quick Start templates from the links in this guide or from another S3 bucket. If you deploy the templates from a local copy on your computer or from a location other than an S3 bucket, you might encounter template size limitations. For more information about AWS CloudFormation quotas, see the <a href="http://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cloudformation-limits.html">AWS documentation</a>.</p>
 </div>
-<div class="paragraph">
-<p>== Send us feedback</p>
 </div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_send_us_feedback">Send us feedback</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>To post feedback, submit feature ideas, or report bugs, use the <strong>Issues</strong> section of the <a href="https://github.com/aws-quickstart/quickstart-progress-openedge" target="_blank" rel="noopener">GitHub repository</a> for this Quick Start. If you’d like to submit code, please review the <a href="https://aws-quickstart.github.io/" target="_blank" rel="noopener">Quick Start Contributor’s Guide</a>.</p>
 </div>
-<div class="paragraph">
-<p>== Quick Start reference deployments</p>
 </div>
+</div>
+<div class="sect1">
+<h2 id="_quick_start_reference_deployments">Quick Start reference deployments</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>See the <a href="https://aws.amazon.com/quickstart/">AWS Quick Start home page</a>.</p>
 </div>
-<div class="paragraph">
-<p>== GitHub repository</p>
 </div>
+</div>
+<div class="sect1">
+<h2 id="_github_repository">GitHub repository</h2>
+<div class="sectionbody">
 <div class="paragraph">
 <p>You can visit our <a href="https://github.com/aws-quickstart/quickstart-progress-openedge" target="_blank" rel="noopener">GitHub repository</a> to download
 the templates and scripts for this Quick Start, to post your comments,
@@ -1633,23 +1737,21 @@ and to share your customizations with others.</p>
 <div class="paragraph">
 <p>© 2020, Amazon Web Services, Inc. or its affiliates, and Progress. All rights reserved.</p>
 </div>
-<div class="paragraph">
-<p>==== Notices</p>
-</div>
+<div class="sect3">
+<h4 id="_notices">Notices</h4>
 <div class="paragraph">
 <p>This document is provided for informational purposes only. It represents AWS’s current product offerings and practices as of the date of issue of this document, which are subject to change without notice. Customers are responsible for making their own independent assessment of the information in this document and any use of AWS’s products or services, each of which is provided “as is” without warranty of any kind, whether express or implied. This document does not create any warranties, representations, contractual commitments, conditions or assurances from AWS, its affiliates, suppliers or licensors. The responsibilities and liabilities of AWS to its customers are controlled by AWS agreements, and this document is not part of, nor does it modify, any agreement between AWS and its customers.</p>
 </div>
 <div class="paragraph">
 <p>The software included with this paper is licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with the License. A copy of the License is located at <a href="http://aws.amazon.com/apache2.0/" class="bare">http://aws.amazon.com/apache2.0/</a> or in the "license" file accompanying this file. This code is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</p>
 </div>
-</blockquote>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2020-07-22 14:58:15 UTC
+Last updated 2020-07-22 16:31:21 UTC
 </div>
 </div>
 </body>
